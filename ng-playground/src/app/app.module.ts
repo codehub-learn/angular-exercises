@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LifecycleModule } from './lifecycle/lifecycle.module';
+import { StructuralDirectivesModule } from './structural-directives/structural-directives.module';
 import { WrapperModule } from './wrapper/wrapper.module';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { WrapperModule } from './wrapper/wrapper.module';
   imports: [
     BrowserModule,
     WrapperModule,
-    LifecycleModule
+    LifecycleModule,
+    StructuralDirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

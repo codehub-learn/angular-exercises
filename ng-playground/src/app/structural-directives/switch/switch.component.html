@@ -1,0 +1,16 @@
+<ng-container *ngFor="let person of people">
+  <div [ngSwitch]="person.country">
+    <div *ngSwitchCase="'GR'" style="color: blue">
+      {{person.name}}
+    </div>
+    <div *ngSwitchCase="'USA'" style="color: red">
+      {{person.name}}
+    </div>
+    <div *ngSwitchCase="'UK'" style="color: green">
+      {{person.name}}
+    </div>
+    <div *ngSwitchDefault>
+      {{person.name}}
+    </div>
+  </div>
+</ng-container>
