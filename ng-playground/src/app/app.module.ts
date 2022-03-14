@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AttributeDirectivesModule } from './attribute-directives/attribute-directives.module';
 import { LifecycleModule } from './lifecycle/lifecycle.module';
 import { StructuralDirectivesModule } from './structural-directives/structural-directives.module';
 import { WrapperModule } from './wrapper/wrapper.module';
@@ -14,7 +15,8 @@ import { WrapperModule } from './wrapper/wrapper.module';
     BrowserModule,
     WrapperModule,
     LifecycleModule,
-    StructuralDirectivesModule
+    StructuralDirectivesModule,
+    AttributeDirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
