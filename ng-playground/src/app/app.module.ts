@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AttributeDirectivesModule } from './attribute-directives/attribute-directives.module';
 import { LifecycleModule } from './lifecycle/lifecycle.module';
+import { ServicesModule } from './services/services.module';
 import { StructuralDirectivesModule } from './structural-directives/structural-directives.module';
 import { WrapperModule } from './wrapper/wrapper.module';
 
@@ -16,7 +17,8 @@ import { WrapperModule } from './wrapper/wrapper.module';
     WrapperModule,
     LifecycleModule,
     StructuralDirectivesModule,
-    AttributeDirectivesModule
+    AttributeDirectivesModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
