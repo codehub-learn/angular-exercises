@@ -1,0 +1,12 @@
+<form #form="ngForm" class="form">
+  <div class="form-group">
+    <label>First Name</label>
+    <input class="form-control" name="firstName"
+      [ngModel]="model.firstName"
+      (ngModelChange)="capitalize($event)"
+    />
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn">OK</button>
+  </div>
+</form>
